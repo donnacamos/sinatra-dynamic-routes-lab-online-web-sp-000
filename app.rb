@@ -4,6 +4,8 @@ class App < Sinatra::Base
   
   get '/reversename/:name' do 
     @name = params[:name]
+    
+    erb :reverename 
   end 
   
   get '/square/:number' do 
